@@ -31,7 +31,8 @@ Live Demo: [Click Here]()
 
 Clone the repository
 
-git clone https://github.com//greenden.git
+git clone https://github.com/ananthasubha555-sudo
+/greenden.git
 
 
 Open the folder and launch the index.html file in your browser.
