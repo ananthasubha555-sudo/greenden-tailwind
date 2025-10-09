@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>greenden</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-<body>
-   <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <body>
+   <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-30">
     <h1 class="text-2xl">GREENDEN</h1>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
 </svg>
 
     <ul class="flex gap-5 text-gray-600 hidden md:flex">
-        <li><a class="hover:underline hover:text-black" href="">Home</a></li>
+        <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
         <li><a class="hover:underline hover:text-black" href="product.html">Product</a></li>
         <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
     </ul>
    </nav> 
+   <!-- OFFER -->
+    <div class=" bg-green-200 shadow-2xl text-black p-2 text-center overflow-hidden whitespace-nowrap">
+        <span class="inline-block animate-pulse p-3">🔥 FLAT UP to 50% off! SHOP NOW! 🔥</span>
+    </div>
 <!--header-->
 <section class="bg-green-100 p-4 md:p-10 flex md:justify-center">
     <div>
@@ -30,9 +35,10 @@
     <p class="mt-4">160+ Plant Species | 100+ Clients</p>
     </div>
     <div class="hidden md:block p-3">
-        <img src="./images/header.png" alt="image" class="w-80 h-40 bg-green-100">
+        <img src="./images/bestseller4.png" alt="image" class="bg-green-100 px-10">
     </div>
 </section>
+<!--About Section-->
 <section class="text-center">
     <h1 class="text-3xl mt-5">About Us</h1>
     <p>This site for those who admire the beaudy and harmony of nature</p>
@@ -62,54 +68,66 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iste perspiciatis dolore voluptate aspernatur sequi accusamus itaque soluta? Fuga natus facilis quo, at ab suscipit ratione similique obcaecati porro sint debitis aliquid esse numquam eligendi cum voluptates, placeat, nesciunt voluptatum. Mollitia consequuntur, delectus nam sit voluptas reiciendis voluptate voluptatibus eaque?</p></div>
     </div>
 </section>
+<!--Seller Section-->
 <section class="p-4 text-center">
     <h1 class="font-bold mt-5 text-3xl">Best Seller</h1>
     <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
-        <div>
-            <img src="./images/bestseller6.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="image">
+        <div class="relative">
+            <i class="fa-regular fa-heart absolute z-10 top-2 left-3/4 bg-white p-2 hover:bg-red-600 cursor-pointer md:left-2/3" style="color: #000000; border-radius: 50%;width: fit-content; height: fit-content;"></i>
+            <img src="./images/header.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="image">
             <h2>Rose Plant</h2>
             <p>$40</p>
+            <button class="bg-green-100 text-black p-1 rounded mx-5 hover:bg-green-300">Shop Now</button>
         </div>
-        <div>
+        <div class="relative">
+            <i class="fa-regular fa-heart absolute z-10 top-2 left-3/4 bg-white p-2 hover:bg-red-600 cursor-pointer md:left-2/3" style="color: #000000; border-radius: 50%;width: fit-content; height: fit-content;"></i>
             <img src="./images/bestseller4.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="image">
             <h2>Lilly Plants</h2>
             <p>$20</p>
+            <button class="bg-green-100 text-black p-1 rounded mx-5 hover:bg-green-300">Shop Now</button>
         </div>
-        <div>
+        <div class="relative">
+            <i class="fa-regular fa-heart absolute z-10 top-2 left-3/4 bg-white p-2 hover:bg-red-600 cursor-pointer md:left-2/3" style="color: #000000; border-radius: 50%;width: fit-content; height: fit-content;"></i>
             <img src="./images/bestseller5.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="image">
             <h2>Money Plants</h2>
             <p>$25</p>
+            <button class="bg-green-100 text-black p-1 rounded mx-5 hover:bg-green-300">Shop Now</button>
         </div>
-        <div>
+        <div class="relative">
+            <i class="fa-regular fa-heart absolute z-10 top-2 left-3/4 bg-white p-2 hover:bg-red-600 cursor-pointer md:left-2/3" style="color: #000000; border-radius: 50%;width: fit-content; height: fit-content;"></i>
             <img src="./images/bestseller7.png" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="image">
             <h2>snake Plants</h2>
             <p>$30</p>
+            <button class="bg-green-100 text-black p-1 rounded mx-5 hover:bg-green-300">Shop Now</button>
         </div>
     </div>
 </section>
+<!--Reviews Sections-->
 <section>
     <h1 class="text-3xl font-bold mt-5 text-center">Customer Reviews</h1>
     <div class="flex flex-col gap-5 justify-center text-white m-5">
-        <div class="bg-green-900 p-5 container">
+        <div class="bg-green-900 p-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam, quos cum, quasi excepturi odit quisquam at praesentium, libero exercitationem accusamus quidem tempore eius magnam! Eligendi, numquam? Velit maxime qui magnam libero, ab quas! Blanditiis eius quas, a laudantium eaque distinctio sequi sed expedita, sint dolore ad sapiente maiores tempora?</p>
             <p class="font-bold text-yellow-300">Lenin Mug</p>
         </div>
-        <div class="bg-green-900 p-5 container">
+        <div class="bg-green-900 p-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam, quos cum, quasi excepturi odit quisquam at praesentium, libero exercitationem accusamus quidem tempore eius magnam! Eligendi, numquam? Velit maxime qui magnam libero, ab quas! Blanditiis eius quas, a laudantium eaque distinctio sequi sed expedita, sint dolore ad sapiente maiores tempora?</p>
             <p class="font-bold text-yellow-300">Subha Shudi</p>
         </div>
-        <div class="bg-green-900 p-5 container">
+        <div class="bg-green-900 p-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam, quos cum, quasi excepturi odit quisquam at praesentium, libero exercitationem accusamus quidem tempore eius magnam! Eligendi, numquam? Velit maxime qui magnam libero, ab quas! Blanditiis eius quas, a laudantium eaque distinctio sequi sed expedita, sint dolore ad sapiente maiores tempora?</p>
             <p class="font-bold text-yellow-300">Arthi Wall</p>
         </div>
     </div>
 </section>
+<!--NEWS LETTER-->
 <section class="text-center">
     <h1 class="text-3xl font-bold mt-5 text-center">Join Our News Letter</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, recusandae.</p>
     <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
     <button class="bg-black text-white p-3 m-1 underline">Subscribe</button>
 </section>
+<!--Footer-->
 <section class="bg-green-100 p-10 flex flex-col gap-5 mt-5">
     <h1 class="text-4xl font-bold">Greenden</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ea!</p>
